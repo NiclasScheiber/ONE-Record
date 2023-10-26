@@ -1,3 +1,7 @@
+# baseURI: https://onerecord.iata.org/ns/cargo
+# imports: https://onerecord.iata.org/ns/coreCodeLists
+# prefix: cargo
+
 @prefix : <https://onerecord.iata.org/ns/cargo#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
