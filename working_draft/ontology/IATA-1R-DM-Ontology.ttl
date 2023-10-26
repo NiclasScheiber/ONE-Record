@@ -48,7 +48,16 @@ Cleanup
 - Homogenization of class and property names, prefixes and general bugfixes"""@en ;
                                        rdfs:isDefinedBy "https://www.iata.org/one-record/"^^xsd:anyURI ;
                                        rdfs:label "ONE Record Ontology"@en ;
-                                       owl:versionInfo "3.0.0"@en .
+                                       owl:versionInfo "3.0.0"@en ;
+								dc:creator "TEST" ;
+                                                               dcterms:created "2020-07-20" ;
+                                                               dcterms:description "This ontology contains classes, attributes, relation about business services that are used in Logistics events." ;
+                                                               dcterms:isRequiredBy <https://ontology.tno.nl/logistics/federated/Event> ;
+                                                               dcterms:issued "2021-03-15" ;
+                                                               dcterms:language "en" ;
+                                                               dcterms:requires <https://ontology.tno.nl/logistics/federated/Classifications> ,
+                                                                                <https://ontology.tno.nl/logistics/federated/LogisticsRoles> ;
+                                                               owl:versionInfo "Created with TopBraid Composer" .
 
 #################################################################
 #    Annotation properties
