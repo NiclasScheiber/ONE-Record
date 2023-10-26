@@ -13,41 +13,7 @@
 @prefix ccodes: <https://onerecord.iata.org/ns/coreCodeLists#> .
 @base <https://onerecord.iata.org/ns/cargo> .
 
-<https://onerecord.iata.org/ns/cargo> rdf:type owl:Ontology ;
-                                       owl:versionIRI <https://onerecord.iata.org/ns/cargo/3.0.0> ;
-                                       owl:imports <https://onerecord.iata.org/ns/coreCodeLists/1.0.0> ;
-                                       dc:description "The ONE Record vocabulary, described using W3C RDF Schema and the Web Ontology Language."@en ;
-                                       dc:title "ONE Record Ontology"@en ;
-                                       terms:abstract "The ontology of the ONE Record standard is the core data model underlying the Linked Data solution drafted by the ONE Record standard: https://github.com/IATA-Cargo/ONE-Record. ONE Record is a standard for data sharing and creates a single record view of the shipment. This standard defines a common data model for the data that is shared via standardized and secured web API."@en ;
-                                       terms:modified "24-10-2023" ;
-                                       terms:title "ONE Record Ontology"@en ;
-                                       rdfs:comment """Details availalble on GitHub https://github.com/IATA-Cargo/ONE-Record
-
-Version 3.0.0
-
-Complete technical revision of the ontology:
-- Changed all IRIs and ontology namespaces into /cargo/ and elimination of property prefixes to conform with RDF best practices as required by API working group
-- Changed all enumberations into Named Individuals
-- Added Core Code List sub-ontology, containing most relevant Code Lists for Air Transport, as dependency for the data model
-- Added generic CodeListElement to handle undefined and company-specific code lists
-- Added superclass structure, including LogisticsAgents as discussed in DMWG workshop January 23/24th 2023
-- Added LogisticsActivities, LogisticsActions and LogisticsService as discussed in DMWG workshop March 20/21st 2023
-
-Additions to the business logics of the ontology:
-- Added TransportMovement, UnitComposition and Storage as LogisticsActivity; to transmit sets of tasks (LogisticsActions) and processes in air cargo
-- Added Loading, Composing, Storing and Checks as LogisticsAction; to transmit tasks to be executed
-- Added Booking as LogisticsService; to refer to LogisticsActivities performed in the transportation contexts
-- Added PhysicalLogisticsObjects as parent class for twins of physical objects such as Piece, Item, ULD or TransportMovement
-- Added MCD 2.0 objects and properties
-- Removed old MCD 1 objects and properties
-- Minor other additions (CurrencyValue, WaybillLineItem, LoadingMaterial)
-
-Cleanup
-- Removed all deprecated properties due to the namespace change - no backwards compatibility!
-- Removed all minCardinalityConstraints, these are no technical restrictions
-- Homogenization of class and property names, prefixes and general bugfixes"""@en ;
-                                       rdfs:label "ONE Record Ontology"@en ;
-                                       owl:versionInfo "3.0.0"@en .
+<https://onerecord.iata.org/ns/cargo> rdf:type owl:Ontology .
 
 #################################################################
 #    Annotation properties
