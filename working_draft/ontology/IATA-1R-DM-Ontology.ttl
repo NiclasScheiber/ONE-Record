@@ -14,7 +14,6 @@
 @base <https://onerecord.iata.org/ns/cargo> .
 
 <https://onerecord.iata.org/ns/cargo> rdf:type owl:Ontology ;
-                                       owl:versionIRI <https://onerecord.iata.org/ns/cargo/3.0.0> ;
                                        owl:imports <https://onerecord.iata.org/ns/coreCodeLists/1.0.0> ;
                                        dc:description "The ONE Record vocabulary, described using W3C RDF Schema and the Web Ontology Language."@en ;
                                        dc:title "ONE Record Ontology"@en ;
